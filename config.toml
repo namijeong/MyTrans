@@ -1,0 +1,23 @@
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+baseRadius = "0.75rem"
+# 한국어·일본어(가나·한자)·베트남어(성조 기호)를 모두 지원하는 Noto Sans KR 사용
+# (Streamlit은 폰트 URL을 하나만 허용한다. 없는 글자는 브라우저 기본 폰트로 대체된다)
+font = "'Noto Sans KR':https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap"
+headingFont = "'Noto Sans KR':https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap"
+# 번역 결과는 st.code로 표시하므로 코드 블록도 본문 폰트를 사용
+codeFont = "'Noto Sans KR':https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap"
+codeFontSize = "1rem"
+
+# [theme]만 설정하면 라이트 테마 하나로 고정되므로, 라이트/다크를 각각 정의해
+# 사용자 시스템 설정(prefers-color-scheme)에 따라 자동 전환되게 한다.
+[theme.light]
+primaryColor = "#4F46E5"
+
+[theme.dark]
+primaryColor = "#5B5BD6"
